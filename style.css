@@ -1,0 +1,146 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9, #e0e7ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #006699, #003366);
+    color: white;
+    padding: 3em 0;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden; /* Garante que o conteúdo dentro do header não ultrapasse o limite */
+}
+
+.profile-container {
+    text-align: center;
+    transform: translateY(-50px); /* Ajuste esse valor se precisar reposicionar */
+    position: relative; /* Adiciona position relativa para conter a imagem */
+    margin-top: 20px; /* Adiciona margem para evitar que a imagem ultrapasse o topo */
+}
+
+.profile-picture {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
+}
+
+.sap-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* Gradient Text for Header */
+header h1 {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #ffdfba, #fbc2eb);
+    -webkit-background-clip: text;
+    background-clip: text; /* Propriedade padrão para compatibilidade */
+    color: transparent;
+    margin-top: 1em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffdfba;
+}
+
+/* Technologies Section */
+.technologies {
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #fff, #e0e7ff);
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 2em auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    transform: perspective(800px) rotateX(3deg);
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.tech-icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Sections with Shadows */
+.about, .experience, .education, .languages, .contact {
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 800px;
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: linear-gradient(135deg, #003366, #002244);
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu de Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #003366; /* Cor de fundo */
+    padding: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Ocupa toda a largura da tela */
+}
+
+/* Links do Menu */
+nav a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px; /* Bordas arredondadas apenas nos links */
+}
+
+/* Hover nos Links */
+nav a:hover {
+    background-color: #ffdfba; /* Cor de fundo ao passar o mouse */
+    color: #003366; /* Cor do texto ao passar o mouse */
+}
